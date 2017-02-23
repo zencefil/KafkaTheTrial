@@ -5,8 +5,10 @@ Can be used to read text sent by a kafka producer for a given topic and then cou
 To test this code with Kafka kafka_2.11-0.10.1.1 and Spark 2.0.0
 
 1.Download and unzip kafka_2.11-0.10.1.1.
+
 2.add following line to $SPARK_HOME/conf/spark-defaults.conf
 spark.jars.packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.0.0
+
 3.Start Zookeeper server
  ~/Downloads/kafka_2.11-0.10.1.1/bin $ ./zookeeper-server-start.sh  ../config/zookeeper.properties
 4.Start Kafka server
